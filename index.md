@@ -1,7 +1,12 @@
 ---
-title: poetcat
+layout: default
+title: ""
 ---
 
-# An island with no shore and a single tree
+<img src="/media/images/island.jpg" alt="Isla" class="fullscreen-image" />
+
+# poetcat
+
+An island with no shore and a single tree
 
 meep meeep mimiiii mimi miii mia u.
