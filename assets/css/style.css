@@ -3,22 +3,23 @@ html, body {
   padding: 0;
   font-family: "Times New Roman", Times, serif;
   width: 100%;
-  height: auto;  /* cambiamos de 100%/100vh a auto para permitir scroll */
+  height: auto; /* permite scroll si el contenido es más largo */
 }
 
 .background-image {
-  position: absolute;   /* no fixed, así la imagen sigue al contenido */
+  position: absolute;    /* no fixed, para que siga al contenido */
   top: 0;
   left: 0;
-  width: 100%;
-  min-height: 100vh;   /* mínimo alto igual a la ventana */
-  object-fit: cover;    /* mantiene proporción */
-  z-index: -1;          /* queda detrás del texto */
+  width: 100%;           /* ocupa todo el ancho */
+  height: auto;           /* mantiene proporción */
+  min-height: 100vh;     /* ocupa al menos la ventana completa */
+  object-fit: cover;      /* recorta lo necesario pero no estira */
+  z-index: -1;            /* queda detrás del texto */
 }
 
 .text-overlay {
-  position: relative;   /* relativo al flujo normal */
-  margin: 5% 5%;       /* margen desde los lados y arriba */
+  position: relative;    /* dentro del flujo normal */
+  margin: 5% 5%;        /* margen desde los lados y arriba */
   color: white;
   background-color: transparent;
   text-align: justify;
