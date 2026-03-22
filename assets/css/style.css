@@ -3,6 +3,33 @@ body, html {
   padding: 0;
   width: 100%;
   height: 100%;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.background-image {
+  width: 100%;
+  height: auto; /* mantiene proporción */
+  max-height: 100vh; /* no sobrepasa alto visible */
+  display: block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 20%;
+  left: 5%;           /* justificado a la izquierda con margen */
+  transform: none;    /* eliminamos el centrado horizontal */
+  color: white;
+  background-color: transparent; /* sin fondo */
+  padding: 0;
+  max-width: 90%;
+  text-align: justify;  /* justificado */
+  font-size: 1.5rem;
+  line-height: 1.4;
+}body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
   font-family: sans-serif;
 }
 
