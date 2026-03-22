@@ -1,27 +1,26 @@
 html, body {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
   font-family: "Times New Roman", Times, serif;
-  overflow: hidden; /* opcional: evita scroll si la imagen cubre todo */
+  width: 100%;
+  height: auto;  /* cambiamos de 100%/100vh a auto para permitir scroll */
 }
 
 .background-image {
-  position: fixed;       /* fija la imagen al fondo */
+  position: absolute;   /* no fixed, así la imagen sigue al contenido */
   top: 0;
   left: 0;
-  width: 100vw;          /* ocupa todo el ancho de la ventana */
-  height: 100vh;         /* ocupa todo el alto de la ventana */
-  object-fit: cover;     /* mantiene proporción y recorta lo necesario */
-  z-index: -1;           /* para que quede detrás del texto */
+  width: 100%;
+  min-height: 100vh;   /* mínimo alto igual a la ventana */
+  object-fit: cover;    /* mantiene proporción */
+  z-index: -1;          /* queda detrás del texto */
 }
 
 .text-overlay {
-  position: relative;    /* relativo al body */
-  margin: 5% 5% 0 5%;   /* margen desde arriba y desde los lados */
+  position: relative;   /* relativo al flujo normal */
+  margin: 5% 5%;       /* margen desde los lados y arriba */
   color: white;
-  background-color: transparent; /* sin fondo */
+  background-color: transparent;
   text-align: justify;
   font-size: 1.5rem;
   line-height: 1.4;
