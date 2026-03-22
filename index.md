@@ -9,19 +9,4 @@ title: ""
   <h1>poetcat</h1>
   <h2>An island with no shore and a single tree</h2>
   <p>meep meeep mimiiii mimi miii mia u.</p>
-</div>---
-layout: default
-title: ""
----
-
-<div style="position: relative;">
-
-  <img src="/media/images/island.jpg" alt="Isla vertical" class="background-image" />
-
-  <div class="text-overlay">
-    <h1>poetcat</h1>
-    <h2>An island with no shore and a single tree</h2>
-    <p>meep meeep mimiiii mimi miii mia u.</p>
-  </div>
-
 </div>
