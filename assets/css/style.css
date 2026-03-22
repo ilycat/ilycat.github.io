@@ -1,16 +1,28 @@
-html, body {
+body, html {
   margin: 0;
   padding: 0;
+  width: 100%;
   height: 100%;
-  overflow: hidden;
+  font-family: sans-serif;
 }
 
-.fullscreen-image {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  z-index: -1; /* Para que quede detrás del contenido */
+.background-image {
+  width: 100%;
+  height: auto; /* para que mantenga la proporción */
+  max-height: 100vh; /* que no sobrepase el alto visible */
+  display: block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: rgba(0,0,0,0.5); /* fondo negro semitransparente para mejor lectura */
+  padding: 1em 2em;
+  border-radius: 10px;
+  max-width: 90%;
+  text-align: center;
+  font-size: 1.5rem;
 }
